@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>MGEKO</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>MGeko </h1>
-  <p>This site will host manga/manhwa content</p>
-  <p>This site will be deployed using Amazon S3 static hosting.</p>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">MGEKO</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#genres">Genres</a></li>
+      <li><a href="#deploy">Deployment</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <h1>MGeko</h1>
+    <p>Static manga/manhwa content demo site</p>
+    <a href="#about" class="btn">Explore Project ↓</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About This Project</h2>
+    <p>This project demonstrates static website deployment using AWS S3 static hosting with proper configuration and documentation.</p>
+  </section>
+
+  <!-- GENRES GRID -->
+  <section id="genres">
+    <h2>Popular Genres</h2>
+
+    <div class="grid">
+      <div class="card">Action</div>
+      <div class="card">Fantasy</div>
+      <div class="card">Romance</div>
+      <div class="card">Sci-Fi</div>
+      <div class="card">Drama</div>
+      <div class="card">Adventure</div>
+    </div>
+
+  </section>
+
+  <!-- DEPLOY -->
+  <section id="deploy">
+    <h2>Deployment Steps</h2>
+    <ol>
+      <li>Create S3 bucket</li>
+      <li>Enable static hosting</li>
+      <li>Upload files</li>
+      <li>Configure bucket policy</li>
+      <li>Test endpoint</li>
+    </ol>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Project demo for AWS static hosting • In progress</p>
+  </footer>
+
 </body>
 </html>
