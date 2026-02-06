@@ -1,0 +1,6 @@
+- Create S3 bucket
+- Enable static hosting
+- Upload files
+- Configure bucket policy
+- Add screenshots
+- Document steps
