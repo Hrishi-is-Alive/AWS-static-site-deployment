@@ -18,3 +18,13 @@ Project in progress — initial site structure created.
 - Configure static hosting
 - Add screenshots
 - Add deployment guide
+
+## Deployment Plan (AWS S3 Static Hosting)
+- Create S3 bucket
+- Enable static website hosting
+- Upload HTML files
+- Configure bucket policy for public read
+- Test site endpoint
+- Add screenshots to repo
+- Document full setup steps
+- (Optional) Add CloudFront CDN later
