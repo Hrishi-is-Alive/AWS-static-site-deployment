@@ -143,12 +143,12 @@ section {
 
 /* FOOTER */
 
-<footer>
-  <p>MGeko Demo Project</p>
-  <p>
-    <a href="#home">Top</a> |
-    <a href="#about">About</a> |
-    <a href="#deploy">Deployment</a>
-  </p>
-</footer>
-
+footer {
+  text-align: center;
+  padding: 28px;
+  margin-top: 50px;
+  background: #0b1220;
+  color: #cbd5f1;
+  font-size: 14px;
+  line-height: 1.6;
+}
