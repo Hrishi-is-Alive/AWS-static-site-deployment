@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+
+
 <body>
   
     <header>
@@ -35,7 +37,7 @@
   <p class="section-sub">
     Recently added titles on the platform
   </p>
-  <div class="latest-grid">
+  <div class="latest-grid" id="latestRow">
 
   <div class="latest-item">
   <img src="images/JJK-modulo.jpg" alt="Jujutsu Kaisen Modulo">
@@ -206,6 +208,39 @@
   <p>© 2026 MGeko — Static Cloud Demo Project</p>
   <p>Built with HTML, CSS, AWS S3 static hosting</p>
 </footer>
+
+<!-- script -->
+
+<script>
+const slider = document.getElementById('latestRow');
+
+let isDown = false;
+let startX = 0;
+let scrollLeft = 0;
+
+slider.addEventListener('dragstart', e => e.preventDefault());
+
+slider.addEventListener('mousedown', (e) => {
+  e.preventDefault();
+  isDown = true;
+  slider.classList.add('dragging');
+  startX = e.clientX;
+  scrollLeft = slider.scrollLeft;
+});
+
+window.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('dragging');
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  const dx = e.clientX - startX;
+  slider.scrollLeft = scrollLeft - dx;
+});
+</script>
+
+
 
 </body>
 </html>

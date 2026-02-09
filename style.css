@@ -114,12 +114,26 @@ section {
   gap: 20px;
   margin-top: 20px;
 }
+
 .latest-grid {
   display: flex;
   gap: 18px;
   overflow-x: auto;
   padding-bottom: 12px;
   scroll-snap-type: x mandatory;
+  cursor: grab;
+  user-select: none;
+}
+
+.latest-grid.dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+} 
+
+.latest-grid img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  user-select: none;
 }
 
 .latest-item {
@@ -137,6 +151,9 @@ section {
   display: block;
   margin: 0 auto 8px;
   transition: transform 0.25s ease;
+ -webkit-user-drag: none;
+  user-drag: none;
+  
 }
 
 .latest-item:hover img {
