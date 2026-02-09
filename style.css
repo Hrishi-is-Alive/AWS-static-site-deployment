@@ -120,14 +120,12 @@ section {
   gap: 18px;
   overflow-x: auto;
   padding-bottom: 12px;
-  scroll-snap-type: x mandatory;
   cursor: grab;
   user-select: none;
 }
 
 .latest-grid.dragging {
   cursor: grabbing;
-  scroll-snap-type: none;
 } 
 
 .latest-grid img {
