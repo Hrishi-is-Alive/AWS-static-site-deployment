@@ -280,6 +280,51 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  section {
+    padding: 30px 18px;
+    margin: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-cover {
+    height: 300px;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+
 /* FOOTER */
 
 footer {
